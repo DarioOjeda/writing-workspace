@@ -3,6 +3,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./projects",
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,
@@ -18,12 +19,8 @@
     "target": "ES2022",
     "module": "ES2022",
     "paths": {
-      "api": [
-        "./dist/api"
-      ],
-      "ui-components": [
-        "./dist/ui-components"
-      ]
+      "@wrkspc/api": ["libs/api/src/index.ts"],
+      "@wrkspc/ui-components": ["libs/ui-components/src/index.ts"],
     }
   },
   "angularCompilerOptions": {
