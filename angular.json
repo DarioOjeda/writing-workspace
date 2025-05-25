@@ -3,36 +3,36 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "writing-workspace": {
+    "writing-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
         }
       },
-      "root": "projects/writing-workspace",
-      "sourceRoot": "projects/writing-workspace/src",
+      "root": "projects/apps/writing-app",
+      "sourceRoot": "projects/apps/writing-app/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/writing-workspace",
-            "index": "projects/writing-workspace/src/index.html",
-            "browser": "projects/writing-workspace/src/main.ts",
+            "outputPath": "dist/writing-app",
+            "index": "projects/apps/writing-app/src/index.html",
+            "browser": "projects/apps/writing-app/src/main.ts",
             "polyfills": [
               "zone.js"
             ],
-            "tsConfig": "projects/writing-workspace/tsconfig.app.json",
+            "tsConfig": "projects/apps/writing-app/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "projects/writing-workspace/public"
+                "input": "projects/apps/writing-app/public"
               }
             ],
             "styles": [
-              "projects/writing-workspace/src/styles.scss"
+              "projects/apps/writing-app/src/styles.scss"
             ],
             "scripts": []
           },
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "writing-workspace:build:production"
+              "buildTarget": "writing-app:build:production"
             },
             "development": {
-              "buildTarget": "writing-workspace:build:development"
+              "buildTarget": "writing-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,16 +82,16 @@
               "zone.js",
               "zone.js/testing"
             ],
-            "tsConfig": "projects/writing-workspace/tsconfig.spec.json",
+            "tsConfig": "projects/apps/writing-app/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "projects/writing-workspace/public"
+                "input": "projects/apps/writing-app/public"
               }
             ],
             "styles": [
-              "projects/writing-workspace/src/styles.scss"
+              "projects/apps/writing-app/src/styles.scss"
             ],
             "scripts": []
           }

@@ -179,6 +179,11 @@
 
 <main class="main">
   <div class="content">
+    @for (draft of drafts; track draft.id) {
+      <li>{{ draft.text }}</li>
+    } @empty {
+      <li>No hay borradores.</li>
+    }
     <div class="left-side">
       <svg
         xmlns="http://www.w3.org/2000/svg"
