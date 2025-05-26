@@ -1,1 +1,4 @@
-<p>draft-list works!</p>
+@for(draft of drafts(); track draft.id) {
+    <li>{{draft.text}}</li>
+}
+
