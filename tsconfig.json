@@ -19,7 +19,12 @@
     "target": "ES2022",
     "module": "ES2022",
     "paths": {
-      "@wrkspc/api": ["libs/api/src/index.ts"],
+      "@wrkspc/api": [
+        "libs/api/src/index.ts"
+      ],
+      "@wrkspc/drafts": [
+        "libs/drafts/src/index.ts"
+      ],
     }
   },
   "angularCompilerOptions": {
